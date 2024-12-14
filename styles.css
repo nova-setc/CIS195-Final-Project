@@ -1,0 +1,277 @@
+/* declare starborn font family */
+@font-face {
+  font-family: starborn;
+  src: url(fonts/Starborn.ttf);
+}
+
+/* style starborn font */
+.starborn {
+  font-family: starborn, sans-serif;
+}
+
+/* styles for entire page */
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Navbar Customization Beyond Bootstrap */
+#navbar-logo {
+  height: 7vh;
+  margin-right: 0;
+}
+
+.navbar-brand {
+  font-family: starborn, sans-serif;
+}
+
+.navbar {
+  background-image: linear-gradient(var(--bs-dark-bg-subtle), var(--bs-secondary-bg), var(--bs-dark-bg-subtle));
+  padding: 0 0 3vh 0;
+  height: 10vh;
+}
+
+.navbar-nav {
+  background-image: linear-gradient(var(--bs-secondary-bg), var(--bs-dark-bg-subtle));
+  width: fit-content;
+}
+
+#bootstrap-overrides .nav-link {
+  margin-left: 0;
+}
+
+.navbar * {
+  border-radius: 10px;
+}
+
+.nav-link:active {
+  background-color: var(--bs-secondary-bg);
+}
+
+.dropdown-item:active {
+  background-color: var(--bs-secondary-bg);
+}
+
+#bootstrap-overrides .active {
+  background-color: var(--bs-dark-bg-subtle)
+}
+
+#bootstrap-overrides .dropdown-menu {
+  position: absolute;
+  width: fit-content;
+  left: 30%;
+  background-image: linear-gradient(var(--bs-secondary-bg), var(--bs-dark-bg-subtle));
+}
+
+/* style rules for header */
+header {
+  text-align: center;
+}
+
+#bootstrap-overrides header img {
+  height: 50vh;
+  width: 100vw;
+  max-width: 768px;
+  object-fit: cover;
+  position: relative;
+  top: 10vh;
+  box-shadow: 0 0 30px dimgray;
+}
+
+#header-logo {
+  width: fit-content !important;
+  background-color: var(--bs-dark-bg-subtle);
+}
+
+.home-header {
+  display: flex;
+  position: relative;
+  top: 10vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/starry-sky.jpg);
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+header p {
+  margin: auto;
+  text-align: center;
+  padding: 5% 10%;
+  background-color: rgba(0, 0, 0, 75%);
+  border: 3px groove var(--bs-secondary-bg);
+  border-radius: 20px;
+  box-shadow: 0 0 30px dimgray, 0 0 20px inset dimgray;
+}
+
+header h1 {
+  position: relative;
+  top: 15vh;
+  text-shadow: 0 0 30px black, 5px 5px black;
+}
+
+.img-top {
+  object-position: top;
+}
+
+/* style rules for main content */
+.home-main {
+  position: relative;
+  top: 10vh;
+}
+
+main {
+  position: relative;
+  top: 15vh;
+}
+
+.css-grid article {
+  height: fit-content;
+  width: fit-content;
+}
+
+.modal-content img {
+  height: 90vh;
+}
+
+.github-logo {
+  height: 3em;
+}
+
+.contact-links div {
+  margin-left: 15%;
+}
+
+#email-reveal:hover, #email-hide:hover {
+  cursor: pointer;
+}
+
+/* hide email display block */
+#hidden-email {
+  display: none;
+}
+
+/* style rules for footer content */
+footer {
+  height: fit-content;
+  position: relative;
+  top: 20vh;
+}
+
+.footer-main {
+  top: 15vh;
+}
+
+.footer-web {
+  top: 20vh;
+}
+
+
+
+/* style rules for sm breakpoint */
+@media screen and (min-width: 576px) {
+  
+}
+
+
+/* style rules for md breakpoint */
+@media screen and (min-width: 768px) {
+  /*style rules for header content on medium viewports and above */
+  #bootstrap-overrides header img {
+    border-radius: 20px;
+    top: 20vh;
+  }
+
+  .footer-web {
+    top: 75vh;
+  }
+
+  header h1 {
+    top: -40vh;
+  }
+
+  /* style rules for main content on medium viewports and above */
+  main section{
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  /* style bootstrap grid on medium viewports and above */
+  .col-lg {
+    border-radius: 15px;
+  }
+
+  .row {
+    gap: 2%;
+  }
+
+  /* style rules for css grid */
+  .css-grid {
+    display: grid;
+    grid: 40vh / auto auto auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    column-gap: 2%;
+  }
+
+  .css-grid article {
+    border-radius: 20px;
+    max-width: 30vw;
+  }
+
+  .css-grid img {
+    border-radius: 20px;
+    min-width: 300px;
+  }
+
+  /* style rule for carousel content */
+  .car-p {
+    height: 40vh;
+    width: 25vw;
+    margin-top: 5%;
+  }
+
+  /* style rule for contact links for medium viewports and above */
+  .contact-links {
+    border-radius: 20px;
+  }
+}
+
+
+/* style rules for lg breakpoint */
+@media screen and (min-width: 992px) {
+  
+}
+
+
+/* style rules for xl breakpoint */
+@media screen and (min-width: 1200px) {
+
+  /* style rule to position dropdown menu for extra-large and larger viewports */
+  #bootstrap-overrides .dropdown-menu {
+    top: 12vh;
+    width: fit-content;
+    text-align: right;
+  }
+
+  /* style rules to adjust navbar for viewports large enough not to use hamburger button */
+  #bootstrap-overrides .nav-item {
+    text-align: center;
+    width: fit-content;
+    text-wrap: nowrap;
+  }
+
+  #navbar-logo {
+    height: 10vh;
+    margin-right: 3%;
+  }
+  
+  .navbar-nav {
+    background-image: none;
+  }
+  
+  .navbar {
+    padding: 0;
+  }
+}
