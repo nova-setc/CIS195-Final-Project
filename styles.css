@@ -69,17 +69,28 @@ header {
 }
 
 #bootstrap-overrides header img {
-  height: 50vh;
-  width: 100vw;
-  max-width: 768px;
   object-fit: cover;
   position: relative;
   top: 10vh;
   box-shadow: 0 0 30px dimgray;
 }
 
+#flavor-img {
+  height: 50vh;
+  width: 100vw;
+  max-width: 768px;
+}
+
+#web-screen-img {
+  max-height: 50vh;
+  width: 100vw;
+  max-width: 768px;
+}
+
 #header-logo {
-  width: fit-content !important;
+  max-height: 50vh;
+  width: fit-content;
+  max-width: 100vw;
   background-color: var(--bs-dark-bg-subtle);
 }
 
